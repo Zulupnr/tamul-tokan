@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <button id="toggle-dark-mode">Dark Mode</button>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Store Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a product" id="search-input">
+            <div id="suggestions"></div>
+        </div>
+    </header>
+
+    <section class="products">
+        <h2>Products</h2>
+        <div class="product-item">
+            <img src="images/gas_stove_product.jpg" alt="Portable Gas Stove">
+            <p>Portable Mini Gas Stove Aluminium</p>
+            <p><span class="current-price">₹499</span> <span class="original-price">₹1,296</span></p>
+            <button id="pay-now">Add to Cart</button>
+            <div class="wishlist">
+                <button class="add-to-wishlist">Add to Wishlist</button>
+            </div>
+        </div>
+
+        <div class="user-reviews">
+            <h3>User Reviews</h3>
+            <ul id="reviews-list">
+                <li>⭐⭐⭐⭐⭐ - Great product!</li>
+                <li>⭐⭐⭐⭐ - Works well but could be better.</li>
+            </ul>
+            <button id="write-review">Write a Review</button>
+        </div>
+
+        <div class="social-share">
+            <h4>Share this Product:</h4>
+            <button class="share-facebook">Facebook</button>
+            <button class="share-instagram">Instagram</button>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">My Orders</a></li>
+        </ul>
+    </section>
+
+    <section class="footer">
+        <h3>Get In Touch</h3>
+        <p>Copyright © Sasü 2024. All rights reserved.</p>
+        <div class="live-chat">
+            <button id="chat-button">Live Chat Support</button>
+        </div>
+    </section>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
